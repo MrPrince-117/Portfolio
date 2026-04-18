@@ -8,6 +8,9 @@
 </head>
 <body>
 
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
   <canvas id="particles"></canvas>
 
   <nav class="nav">
@@ -16,13 +19,14 @@
       <a href="#stack">stack</a>
       <a href="#proyectos">proyectos</a>
       <a href="#contacto">contacto</a>
+      <a href="#terminal">terminal</a>
     </div>
   </nav>
 
   <section class="hero">
     <div class="hero-content">
       <div class="hero-tag">Backend Developer</div>
-      <h1>Borja<br>Ticona <span>Manrique</span></h1>
+      <h1><span id="typed"></span><span class="cursor-blink">|</span></h1>
       <p class="hero-sub">Construyo la lógica que mantiene los sistemas en pie. Especializado en backend robusto, bases de datos y automatización de procesos.</p>
     </div>
     <div class="hero-grid">
@@ -91,7 +95,27 @@
       <div class="contact-cta">¿Trabajamos juntos?</div>
       <div class="contact-right">
         <a href="mailto:tucorreo@email.com" class="contact-btn">Contactar</a>
+        <a href="cv.pdf" download class="contact-btn cv-btn">Descargar CV</a>
         <span class="footer-note">borja.ticona · backend dev · 2025</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="terminal">
+    <div class="section-label">Terminal</div>
+    <div class="terminal-window">
+      <div class="terminal-header">
+        <span class="t-dot red"></span>
+        <span class="t-dot yellow"></span>
+        <span class="t-dot green"></span>
+        <span class="terminal-title">borja@portfolio ~ $</span>
+      </div>
+      <div class="terminal-body" id="terminal-output">
+        <div class="t-line"><span class="t-prompt">~ $</span> <span class="t-text">Escribe <span class="t-accent">help</span> para ver los comandos disponibles.</span></div>
+      </div>
+      <div class="terminal-input-row">
+        <span class="t-prompt">~ $</span>
+        <input type="text" id="terminal-input" placeholder="escribe un comando..." autocomplete="off" spellcheck="false"/>
       </div>
     </div>
   </section>

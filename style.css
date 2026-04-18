@@ -350,3 +350,19 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* CANVAS PARTÍCULAS */
+#particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+nav, section {
+  position: relative;
+  z-index: 1;
+}

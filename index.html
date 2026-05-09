@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Borja Ticona Manrique</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <div id="cursor"></div>
   <div id="cursor-ring"></div>
 
-  <canvas id="particles"></canvas>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"></script>
+  <spline-viewer id="spline-bg" url="https://prod.spline.design/your-scene-id/scene.splinecode"></spline-viewer>
+
 
   <nav class="nav">
     <span class="nav-logo">BTM_</span>
@@ -27,8 +31,10 @@
     <div class="hero-content">
       <div class="hero-tag">Backend Developer</div>
       <h1><span id="typed"></span><span class="cursor-blink">|</span></h1>
-      <p class="hero-sub">Construyo la lógica que mantiene los sistemas en pie. Especializado en backend robusto, bases de datos y automatización de procesos.</p>
+      <p class="hero-sub">Construyo la lógica que mantiene los sistemas en pie. Especializado en backend robusto, bases
+        de datos y automatización de procesos.</p>
     </div>
+
     <div class="hero-grid">
       <div class="hero-stat">
         <div class="hero-stat-num">2</div>
@@ -69,7 +75,8 @@
         <div class="project-num">01</div>
         <div class="project-status"><span class="status-dot"></span>En desarrollo</div>
         <div class="project-name">Plataforma automatizada ENS Alto</div>
-        <p class="project-desc">Sistema de automatización de procesos desarrollado durante las prácticas. Plataforma interna orientada a mejorar flujos de trabajo y reducir tareas manuales.</p>
+        <p class="project-desc">Sistema de automatización de procesos desarrollado durante las prácticas. Plataforma
+          interna orientada a mejorar flujos de trabajo y reducir tareas manuales.</p>
         <div class="project-tags">
           <span class="project-tag">Backend</span>
           <span class="project-tag">Automatización</span>
@@ -80,7 +87,8 @@
         <div class="project-num">02</div>
         <div class="project-status"><span class="status-dot"></span>TFG</div>
         <div class="project-name">Planificador de viajes inteligente</div>
-        <p class="project-desc">Aplicación que genera itinerarios personalizados de forma inteligente. Proyecto fin de grado que combina lógica de backend con experiencia de usuario.</p>
+        <p class="project-desc">Aplicación que genera itinerarios personalizados de forma inteligente. Proyecto fin de
+          grado que combina lógica de backend con experiencia de usuario.</p>
         <div class="project-tags">
           <span class="project-tag">IA / Lógica</span>
           <span class="project-tag">Planificación</span>
@@ -111,15 +119,18 @@
         <span class="terminal-title">borja@portfolio ~ $</span>
       </div>
       <div class="terminal-body" id="terminal-output">
-        <div class="t-line"><span class="t-prompt">~ $</span> <span class="t-text">Escribe <span class="t-accent">help</span> para ver los comandos disponibles.</span></div>
+        <div class="t-line"><span class="t-prompt">~ $</span> <span class="t-text">Escribe <span
+              class="t-accent">help</span> para ver los comandos disponibles.</span></div>
       </div>
       <div class="terminal-input-row">
         <span class="t-prompt">~ $</span>
-        <input type="text" id="terminal-input" placeholder="escribe un comando..." autocomplete="off" spellcheck="false"/>
+        <input type="text" id="terminal-input" placeholder="escribe un comando..." autocomplete="off"
+          spellcheck="false" />
       </div>
     </div>
   </section>
 
   <script src="main.js"></script>
 </body>
+
 </html>
